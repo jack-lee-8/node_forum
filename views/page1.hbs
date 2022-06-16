@@ -1,0 +1,16 @@
+
+
+<form action="/" method="GET">
+    <input name="one">
+    <input name="two">
+    <input type="submit" name="submit">
+</form>
+
+
+<ul>
+    {{#if resul}}
+    {{#each resul}} 
+        <li>{{name}}-{{text}}</li> 
+    {{/each}} 
+    {{/if}}
+</ul>
