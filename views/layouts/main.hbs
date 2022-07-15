@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		{{> header/head}}
 	</head>
 	<body>
+		{{> header/preloader}}
 		<header>
-			{{!-- {{> header/logo.hbs}} --}}
+			{{> header/header}}
 		</header>
+		{{> header/nav}}
 		<main>
 			{{{body}}}
 		</main>
 		<footer>
-			footer
+			{{> footer/footer}}
 		</footer>
 	</body>
 </html>

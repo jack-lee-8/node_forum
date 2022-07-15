@@ -1,0 +1,44 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document" style="
+    z-index: 1060;
+">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Резюме:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="
+    margin-left: 30px;
+">
+      <p>Это приложение - доска объявлений небольшого города (например Колпино в СПб)</p>
+      <p>Данный сайт создан для демонстрации возможностей автора https://github.com/woskresk по созданию приложений на фреймворке Laravel.
+      <p>Функциональность сайта:
+            <ul><li>Регистрация пользователей (стандартный модуль laravel, авторская верстка)</li>
+            <li>Создание объявлений каждым отдельным пользователем</li>
+            <li>Редактирование объявлений</li>
+            <li>Просмотр и сортировка объявлени</li>
+            <li>Показ Топовых объявлений по 5 шт (Новые, Дешевые...)</li>
+            <li>Показ 5 недавно просмотреных объявлений</li></ul>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<script src="javascript/cookie.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var one = getCookie('name1'); // => "valueCookie"
+
+if(one !== '1'){
+    $('#exampleModalCenter').modal('show');
+    setCookie('name1', '1');  // строчный куки// => "nameCookie=valueCookie; path=/; expires=Thu, 13 Apr 2017 13:00:15 GMT"
+}
+
+    	</script>

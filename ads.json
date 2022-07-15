@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Фитнес центр",
+		"img": "x",
+		"price": 25,
+		"old_price": 300,
+		"sale": 25
+	},
+	{
+		"name": "Дальфинарий",
+		"img": "x",
+		"price": 43,
+		"old_price": 200,
+		"sale": 48
+	},
+	{
+		"name": "Магазин",
+		"img": "x",
+		"price": 94,
+		"old_price": 400,
+		"sale": 35
+	},
+	{
+		"name": "Пышечная",
+		"img": "x",
+		"price": 67,
+		"old_price": 600,
+		"sale": 15
+	}
+]

@@ -1,0 +1,156 @@
+{{!-- Home page --}}
+
+<div class="container col-2">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="main-banner" class="owl-carousel home-slider">
+                <div class="item"> <a href="#"><img src="image/banners/Main-Banner1.jpg" alt="main-banner1" class="img-responsive" /></a> </div>
+                <div class="item"> <a href="#"><img src="image/banners/Main-Banner2.jpg" alt="main-banner2" class="img-responsive" /></a> </div>
+                <div class="item"> <a href="#"><img src="image/banners/Main-Banner3.jpg" alt="main-banner3" class="img-responsive" /></a> </div>
+            </div>
+        </div>
+    </div>
+    
+
+{{> modal/modal}}
+
+
+    <div class="row">
+        {{> sitebar/sitebar_1}}
+
+        <div id="content" class="col-sm-9">
+            <div class="customtab">
+                <div id="tabs" class="customtab-wrapper">
+                    <ul class='customtab-inner'>
+                        <li class='tab'><a href="#tab-latest">Новые (5шт)</a></li>
+                        <li class='tab'><a href="#tab-special">Дешевые (5шт)</a></li>
+                        <li class='tab'><a href="#tab-bestseller">Больше скидка (5шт)</a></li>
+                    </ul>
+                </div>
+
+                {{!--  tab-latest  --}}
+                <div id="tab-latest" class="tab-content">
+                    <div class="box">
+                        <div id="latest-slidertab" class="row owl-carousel product-slider">
+
+    
+                           {{#each latest_home}}
+                                
+                            <div class="item">
+                                <div class="product-thumb transition">
+                                    <div class="image product-imageblock"> <a href=""><img src="{{img}}" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a></div>
+                                    <div class="caption product-detail">
+                                        <h4 class="product-name">{{name}}</h4>
+                                        <p class="price product-price">&#8381 {{price}}  <span class="price-old">{{old_price}}</span></p>
+                                        <div class="rating">Sale: {{sale}}%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {{/each}}
+                            
+
+                        </div>
+                    </div>
+                </div>
+              
+
+                {{!-- tab-special --}}
+                <div id="tab-special" class="tab-content">
+                    <div class="box">
+                        <div id="special-slidertab" class="row owl-carousel product-slider">
+                            
+                            
+                           {{#each special_home}}
+                                
+                            <div class="item">
+                                <div class="product-thumb transition">
+                                    <div class="image product-imageblock"> <a href=""><img src="" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a></div>
+                                    <div class="caption product-detail">
+                                        <h4 class="product-name">{{name}}</h4>
+                                        <p class="price product-price">&#8381 {{price}}  <span class="price-old">{{old_price}}</span></p>
+                                        <div class="rating">Sale: {{sale}}%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {{/each}}
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                {{!-- tab-bestseller --}}
+                <div id="tab-bestseller" class="tab-content">
+                    <div class="box">
+                        <div id="bestseller-slidertab" class="row owl-carousel product-slider">
+
+                            
+                            {{#each bestseller_home}}
+                                
+                            <div class="item">
+                                <div class="product-thumb transition">
+                                    <div class="image product-imageblock"> <a href=""><img src="" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a></div>
+                                    <div class="caption product-detail">
+                                        <h4 class="product-name">{{name}}</h4>
+                                        <p class="price product-price">&#8381 {{price}}  <span class="price-old">{{old_price}}</span></p>
+                                        <div class="rating">Sale: {{sale}}%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {{/each}}
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="subbanner4" class="banner" >
+                    <div class="item"> <a href="#"><img src="image/banners/subbanner4.jpg" alt="Sub Banner4" class="img-responsive" /></a> </div>
+                </div>
+                <div id="subbanner5" class="banner" >
+                    <div class="item"> <a href="#"><img src="image/banners/subbanner5.jpg" alt="Sub Banner5" class="img-responsive" /></a> </div>
+                </div>
+
+
+                <h3 class="productblock-title">Последние 4 шт</h3>
+                <div class="box">
+                    <div id="feature-slider" class="row owl-carousel product-slider">
+
+                        {{#each bestseller_home}}
+                                
+                            <div class="item">
+                                <div class="product-thumb transition">
+                                    <div class="image product-imageblock"> <a href=""><img src="" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a></div>
+                                    <div class="caption product-detail">
+                                        <h4 class="product-name">{{name}}</h4>
+                                        <p class="price product-price">&#8381 {{price}}  <span class="price-old">{{old_price}}</span></p>
+                                        <div class="rating">Sale: {{sale}}%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {{/each}}
+                        
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="brand_carouse" class="owl-carousel brand-logo">
+                <div class="item text-center"> <a href="#"><img src="image/brand/brand1.png" alt="Disney" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="image/brand/brand1.png" alt="Dell" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="image/brand/brand3.png" alt="Harley" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="image/brand/brand4.png" alt="Canon" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="image/brand/brand5.png" alt="Canon" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="image/brand/brand6.png" alt="Canon" class="img-responsive" /></a> </div>
+                </div>
+        </div>
+    </div>
+</div>
+
